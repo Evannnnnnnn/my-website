@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Resume - Yuyang Lou</title>
+  <!-- Elegant Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #ffffff;
+      color: #333333;
+      line-height: 1.6;
+    }
+    
+    /* Fixed Navigation Bar */
+    .navbar {
+      background-color: #222222;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    .navbar a {
+      float: left;
+      display: block;
+      color: #eeeeee;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+      background-color: #555555;
+      color: #ffffff;
+    }
+    
+    /* Main Content Container */
+    .content {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-top: 90px; /* Ensure content isn't hidden behind the navbar */
+    }
+    
+    /* Header Styling */
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      text-align: center;
+      font-size: 1.1rem;
+      color: #555555;
+      margin-bottom: 30px;
+    }
+    
+    /* Section Headings */
+    section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2rem;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 5px;
+    }
+    
+    /* Resume Section Styles */
+    .resume-section {
+      margin-bottom: 30px;
+    }
+    
+    .resume-item {
+      margin-bottom: 20px;
+    }
+    
+    .resume-item h3 {
+      margin: 0;
+      font-size: 1.3rem;
+    }
+    
+    .resume-item .meta {
+      font-size: 0.9rem;
+      color: #777777;
+      margin-bottom: 5px;
+    }
+    
+    .resume-item p {
+      margin: 5px 0;
+    }
+    
+    /* Skills List */
+    .skills-list {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .skills-list li {
+      display: inline-block;
+      background-color: #f2f2f2;
+      color: #333;
+      padding: 5px 10px;
+      margin: 5px;
+      border-radius: 3px;
+      font-size: 0.9rem;
+    }
+    
+    .download-btn {
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+      padding: 10px 20px;
+      background-color: #007acc;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #777777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- Main Content (Resume Page) -->
+  <div class="content">
+    <header>
+      <h1>Yuyang Lou</h1>
+      <p>CS @ University of Washington</p>
+      <a href="Yuyang_Lou_Resume.pdf" download="Yuyang_Lou_Resume.pdf" class="download-btn">
+        Download PDF
+      </a>
+    </header>
+
+    <!-- Experience Section -->
+    <section class="resume-section">
+      <h2>Experience</h2>
+      
+      <div class="resume-item">
+        <h3>Software Engineer Intern</h3>
+        <div class="meta">Fechii Fragrances and Flavors • June 2024 - Sep 2024</div>
+        <ul>
+            <li>Designed a high-performance spectrometry data acquisition and processing system equivalent to Agilent's Mass Hunter.</li>
+            <li>Applied signal processing and filtering techniques using Python, NumPy, and Pandas to extract features from complex and noisy gas chromatography data.</li>
+            <li>Linearly combined and leveraged algorithms such as weighted dot product and probability-based matching for efficient and accurate chemical substance identification.</li>
+            <li>Developed a secure, scalable SQL database to manage and synchronize sensitive data, ensuring reliability and consistency across systems.</li>
+            <li>Utilized vectorized computations and parallel processing to improve system efficiency, reducing computation time by 50%.</li>
+            <li>Built an interactive GUI using Qt and Matplotlib, demonstrating experience in user-facing analytical tools.</li>
+            <li>New software increased the chemical analysts' report generation by 50%, from 120 minutes to 60 minutes.</li>
+          </ul>
+      </div>
+      
+      <div class="resume-item">
+        <h3>Vision Member, Software Team</h3>
+        <div class="meta">Advanced Robotics at University of Washington • Sep 2023 - Present</div>
+        <ul>
+            <li>Maintained and contributed to a custom robot vision library for robot trajectory prediction and computer vision-based localization.</li>
+            <li>Developed a robot grouping and target selection system by designing spatial heuristics and implementing particle filter.</li>
+            <li>Maintained high code quality, clear comments and rigorous testing that allowed a smooth integration of independently developed project into the main data processing pipeline.</li>
+            <li>Has experience with fast feature prototyping and bug-fixes during a 24-hour period at the 2024 Robomaster competition. Refactored and reverted an entire data processing pipeline which ensured the performance of robots at subsequent matches.</li>
+          </ul>
+      </div>
+    </section>
+
+    <section class="resume-section">
+        <h2>Recent Projects</h2>
+        
+        <div class="resume-item">
+          <h3>3-D Object Localization Using Faster R-CNN Object Detection Network</h3>
+          <div class="meta">Sep 2022 - Apr 2023</div>
+          <ul>
+            <li>Implemented Faster R-CNN in TensorFlow to create a 2D object detection program.</li>
+            <li>Built a program that deprojects the 2D location of detected objects into a point in 3D space.</li>
+          </ul>
+        </div>
+      </section>
+
+    <!-- Education Section -->
+    <section class="resume-section">
+      <h2>Education</h2>
+      
+      <div class="resume-item">
+        <h3>University of Washington</h3>
+        <div class="meta">Bachelor of Science in Computer Science • Expected 2027</div>
+        <p>
+            <b>GPA:</b> 3.8/4.0
+        </p>
+        <p>
+          <b>Relevant coursework:</b> Database Management, Linear Optimization, Data Structures and Parallelism, Foundation of Computing II, Computer Programming III.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="resume-section">
+      <h2>Technical Skills</h2>
+      <h3>Languages</h3>
+      <ul class="skills-list">
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>JavaScript</li>
+        <li>SQL</li>
+        <li>MATLAB</li>
+      </ul>
+      <h3>Core Skills</h3>
+      <ul class="skills-list">
+        <li>Full-stack Software Development</li>
+        <li>Signal Processing</li>
+        <li>Machine Learning</li>
+        <li>Database Management</li>
+        <li>Optimization</li>
+        <li>UI Design</li>
+        <li>Data Visualization</li>
+      </ul>
+    </section>
+
+    <!-- Projects or Additional Sections (Optional) -->
+    <!-- You can add more sections such as Projects, Certifications, or Awards here -->
+    
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yuyang Lou. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>

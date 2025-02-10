@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio - Yuyang Lou</title>
+  <!-- Elegant Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Lato', sans-serif;
+      background-color: #fff;
+      color: #333;
+      line-height: 1.6;
+    }
+    
+    /* Fixed Navigation Bar */
+    .navbar {
+      background-color: #222;
+      overflow: hidden;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+    
+    .navbar a {
+      float: left;
+      display: block;
+      color: #eee;
+      text-align: center;
+      padding: 16px 20px;
+      text-decoration: none;
+      font-weight: 700;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    
+    .navbar a:hover {
+      background-color: #555;
+      color: #fff;
+    }
+    
+    /* Main Content Container */
+    .content {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
+      padding-top: 90px; /* Clear the fixed navbar */
+    }
+    
+    /* Header Styling */
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    
+    header p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+    
+    /* Portfolio Grid */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    
+    .portfolio-item {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      overflow: hidden;
+      transition: transform 0.3s ease;
+      background-color: #f9f9f9;
+    }
+    
+    .portfolio-item:hover {
+      transform: translateY(-5px);
+    }
+    
+    .portfolio-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    
+    .item-info {
+      padding: 15px;
+    }
+    
+    .item-info h3 {
+      margin: 0 0 10px;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+    }
+    
+    .item-info p {
+      margin: 0;
+      font-size: 1rem;
+      color: #666;
+    }
+    
+    /* Footer Styling */
+    footer {
+      text-align: center;
+      padding: 20px 0;
+      font-size: 0.9rem;
+      color: #777;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Fixed Navigation Bar -->
+  <div class="navbar">
+    <a href="index.html">About</a>
+    <a href="resume.html">Resume</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  
+  <!-- Main Content (Portfolio Page) -->
+  <div class="content">
+    <header>
+      <h1>Portfolio</h1>
+      <p>Some of my recent projects and work</p>
+    </header>
+    
+    <section class="portfolio-grid">
+      <!-- Portfolio Item 1 -->
+      <div class="portfolio-item">
+        <img src="3.jpg" alt="Project 1">
+        <div class="item-info">
+          <h3>Project Otto</h3>
+          <p>A custom robot vision library for robot trajectory prediction and computer vision-based localization</p>
+        </div>
+      </div>
+      
+      <!-- Portfolio Item 2 -->
+      <div class="portfolio-item">
+        <img src="ChromaStation.png" alt="Project 2">
+        <div class="item-info">
+          <h3>ChromaStation</h3>
+          <p>An data analysis tool developed for analysing gas chromatography and spectrometry data</p>
+        </div>
+      </div>
+      
+      <!-- Add more portfolio items as needed -->
+    </section>
+  </div>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yuyang Lou. All Rights Reserved.</p>
+  </footer>
+</body>
+</html>
